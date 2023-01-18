@@ -136,20 +136,14 @@
     % 123 Street Name, Town, State 12345 \\ 
     \vspace{5pt}
     \small \raisebox{-0.1\height}\faPhone\ 9871626616 ~ 
-    \raisebox{-0.2\height}\faEnvelope\ \href{mailto:knowrohit.07@gmail.com}{ knowrohit.07@gmail.com} ~ 
+    \raisebox{-0.2\height}\faEnvelope\ \href{mailto:knowrohit.07@gmail.com}{ knowrohit.work@gmail.com} ~ 
     \raisebox{-0.2\height}\faTwitter\ \href{https://twitter.com/knowrohit07}{Twitter} ~
     \raisebox{-0.2\height}\faGithub\ \href{https://github.com/knowrohit}{Github} ~ 
     \vspace{-8pt}
 \end{center}
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Amity University Noida}{August '19 -- June '23}
-      {Bachelor of Technology in Computer Science}{Noida, Uttar Pradesh, India}
-  \resumeSubHeadingListEnd
+
 
 \section{Experience}
   \resumeSubHeadingListStart
@@ -158,9 +152,9 @@
       {Data Scientist}{}
       \vspace{-7pt}
       \resumeItemListStart
-        \resumeItem{Successfully deployed and fine-tuned Document extraction OCR model using LayoutLM v3}
-        \resumeItem{Built deployed models for Payslip Forgery and BlurDetection using Tesseract, Huggingface and Spacy NLP.}
-        \resumeItem{Analysed Data inflow of Payslips and their metadata using Apache Superset (MySQL) + worked on custom annotation tool for OCR.}
+        \resumeItem{Successfully deployed on AWS EC2 and fine-tuned Document extraction OCR model using LayoutLM v3}
+        \resumeItem{Built deployed models for Document Classification, Payslip Forgery and BlurDetection using Tesseract, Torchvision, Detectron2 and Spacy NLP.}
+        \resumeItem{Analysed Data inflow, timestamps of Payslips and their metadata using Apache Superset (MySQL) + worked on custom annotation tool for OCR .}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -168,7 +162,7 @@
       {MLOps Engineer }{}
       \vspace{-7pt}
       \resumeItemListStart
-        \resumeItem{Built RNN model for scriptwriting using Transformers, GPT-3 NEO.}
+        \resumeItem{Built RNN and ChatBot model for scriptwriting using Transformers, GPT-3 and GPT-NEO.}
         \resumeItem{Worked on ML systems using PyTorch, TensorFlow and JAX in production to scrape and learn from the clustered data of street wear customers.}
         \resumeItem{Built multimodal projects from OCR and Nyströmformer to perform evaluations on multiple downstream tasks on the GLUE benchmark.}
       \resumeItemListEnd
@@ -179,7 +173,6 @@
       \vspace{-7pt}
       \resumeItemListStart
         \resumeItem{ Built Recurrent Neural Nets for NLP and experimental ML with physics such as  Phononics, dimensionality reduction and federated learning.}
-        \resumeItem{Improved Masked language modeling: which has to predict some tokens that are masked in the input using Tensorflow and MASK.}
       \resumeItemListEnd
       
     
@@ -198,19 +191,27 @@
                 \resumeItem{More training epochs = better text generation.}
           \resumeItemListEnd
         \resumeProjectHeading
-                {\textbf{Bernard-The first sentient AI} $|$ \emph{Hugging Face, Transformers, GPT-2, PyTorch} $|$ \href{https://github.com/knowrohit/BERNARD--The-first-sentient-AI}{Github}}{} 
+                {\textbf{Bernard-The first sentient AI Chatbot} $|$ \emph{Hugging Face, Transformers, GPT-2, PyTorch} $|$ \href{https://github.com/knowrohit/BERNARD--The-first-sentient-AI}{Github}}{} 
             \resumeItemListStart
                 \resumeItem{Bernard combines a sophisticated neural network machine learning model and scripted dialogue content.}
                 \resumeItem{Using transformers and Decoding methods, it mimics the talking style of the user.}
                 \resumeItem{Bernard’s heart lies a complex autoregressive language model GPT-2 that utilizes deep learning to produce human-like text.}
           \resumeItemListEnd
         \resumeProjectHeading
-            {\textbf{BigGAN} $|$ \emph{CUDA, Torchvision, PIL, CLIP, HuggingFace} $|$ \href{https://github.com/knowrohit/BigGAN-}{GitHub}}{} 
+            {\textbf{Product Recommendation Engine} $|$ \emph{VGG16, TensorFlow, AzureML, Open-CV, HuggingFace, Flask, BeautifulSoup4} $|$ \href{https://github.com/knowrohit/Product-Recommendation-Engine-CNN}{GitHub}}{} 
             \resumeItemListStart
-                \resumeItem{Text-to-image generation using GAN, CLIP}
-                \resumeItem{The generation of images using both a point from latent space and image class information as input.}
-                \resumeItem{Using torchvision.utils for image segmentation.}
-                \resumeItem{CLIP is to pre-train a neural language model and an image classification model using image data extracted from the Internet with their respective captions.}
+                \resumeItem{Dataset of 44k images scraped from E-commerce site.}
+                \resumeItem{Feature extractions using Cosine similiarties + VGG Hidden layers}
+                \resumeItem{Predictions using similiarity scores + Azure image tags}
+                \resumeItem{Ensembled learning using VGG16 in computer vision + NCF for combined predictions, later to be deployed on AWS EC2}
+          \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{NFT-GAN} $|$ \emph{torchvision, numpy, PIL, tensorboard, scipy} $|$ \href{https://github.com/knowrohit/NFT-GAN}{GitHub}}{} 
+            \resumeItemListStart
+                \resumeItem{It was developed for the purpose of creating NFT avatar and collectible projects using Gmapping and Gsynthesis.}
+                \resumeItem{Allows you to configure the image generation process in such a way that you have complete control over how rare each and every trait is}
+                \resumeItem{Generate JSON metadata for your NFTs that are in compliance with OpenSea metadata requirements}
+               
           \resumeItemListEnd
 
             
@@ -221,15 +222,15 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{:Python, C/C++, Swift, SQL} \\
+     \textbf{Languages}{:Python, C/C++, SQL} \\
      \vspace{1pt}
-     \textbf{Technologies}{: Anaconda, Apache, NVIDIA Cuda, Jupyter, PostgreSQL, Shopify, WordPress, Linux} \\
+     \textbf{Technologies}{: Anaconda, Apache, NVIDIA Cuda,Linux, Jupyter, PostgreSQL, MySQL Shopify, WordPress} \\
      \vspace{1pt}
-     \textbf{Developer Tools}{: Git, Docker, Microsoft Azure, VS Code, AWS Sagemaker, Superset, PyCharm, iTerm} \\
+     \textbf{Developer Tools}{: Git, Docker, Microsoft Azure ML , VS Code, Amazon S3, AWS Sagemaker, AWS EC2, Superset, PyCharm, Cloudflare, iTerm} \\
      \vspace{1pt}
-     \textbf{Libraries}{: PyTorch, CUDA, BigSLEEP, Numpy, Pandas, JAX, Keras, Scikit-Learn} \\
+     \textbf{Libraries}{: PyTorch, TensorFlow, CUDA, BigSLEEP, Numpy, Pandas, JAX, Keras, Scikit-Learn} \\
      \vspace{1pt}
-     \textbf{Software}{: Microsoft Azure, Anaconda, Neural Designer (XAI platform)} \\
+     \textbf{Software}{: Microsoft Azure, Anaconda, Neural Designer (XAI platform), AWS, Weights&Biases} \\
     }}
  \end{itemize}
 
