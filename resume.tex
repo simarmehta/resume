@@ -1,9 +1,4 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -142,13 +137,13 @@
     \vspace{-8pt}
 \end{center}
 
-% %-----------EDUCATION-----------
-% \section{Education}
-%    \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {Amity University}{Aug '19 -- May'23}
-%       {Bachelor's Of Management Studies}{Delhi, India}
-%   \resumeSubHeadingListEnd
+%-----------EDUCATION-----------
+\section{Education}
+   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Amity University, Noida}{Jul '19 -- May '23}
+      {B.Tech in Computer Science Engineering}{8.5 CGPA}
+  \resumeSubHeadingListEnd
 
 \section{Experience}
   \resumeSubHeadingListStart
@@ -157,20 +152,21 @@
       {Data Scientist}{}
       \vspace{-7pt}
       \resumeItemListStart
-        \resumeItem{Successfully deployed and fine-tuned Document extraction OCR models using LayoutLM v3 and BERT on AWS EC2, replacing third party APIs with inbuilt solution}
+        \resumeItem{Successfully deployed and fine-tuned Document extraction OCR models using LayoutLM v3 on AWS EC2, replacing third party APIs with inbuilt solution}
         \resumeItem{Built and deployed models for Document Classification, Payslip Forgery, and Blur Detection using Tesseract, Torchvision, Detectron2, and Spacy NLP, achieving a 95 percent accuracy rate.}
-        \resumeItem{Developed state-of-the-art NLP solutions for text summarization in Payroll information of employees using GPT-3 and XLNet, improving client satisfaction by 30 percent.}
+        
         \resumeItem{Analyzed Data inflow, timestamps of Payslips, and their metadata using Apache Superset (MySQL); contributed to the development of a custom annotation tool for OCR.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {{Trill Marketplace}\href{https://trillmrkt.com/}{}}{September '21 -- March '22}
-      {MLOps Engineer }{}
+      {{Trill Marketplace} \href{https://trillmrkt.com/}{}}{September '21 -- March '22}
+      {Machine Learning Engineer }{}
+      
       \vspace{-7pt}
       \resumeItemListStart
-        \resumeItem{Developed an RNN and ChatBot model for customer assistant using Transformers, GPT-NEO, resulting in a 30 percent improvement in creative output; incorporated CI/CD pipelines for seamless model updates and deployment.}
-        \resumeItem{Worked on ML systems using PyTorch in production to scrape and learn from the clustered data of streetwear customers, used MLflow for tracking experiments, reproducibility, and model versioning.}
-        \resumeItem{Collaborated with data engineering teams to establish robust data pipelines, using Apache Kafka, ensuring data quality and consistency for ML model training.}
+        \resumeItem{Developed an LLM for customer assistance using GPT-NEO(20B); incorporated CI/CD pipelines for model updates and deployment.}
+        \resumeItem{Worked on ML systems using Google Pegasus in production to scrape and learn from the clustered/textual data of streetwear customers.}
+        \resumeItem{Collaborated with data engineering teams to establish robust data pipelines,  used MLflow for tracking experiments, reproducibility, and model versioning.}
       \resumeItemListEnd
       
     \resumeSubheading
@@ -178,7 +174,7 @@
       {Data Science - Intern}{}
       \vspace{-7pt}
       \resumeItemListStart
-        \resumeItem{ Worked on Recurrent Neural Nets for NLP and experimental ML with physics such as Phononics, dimensionality reduction, and federated learning, achieving a 90 percent success rate in simulations.}
+        \resumeItem{ Contributed on experimental ML with physics such as Phononics, and federated learning, achieving a 90 percent success rate in simulations.}
       \resumeItemListEnd
       
     
@@ -188,37 +184,37 @@
 \section{Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
-    
+        \resumeProjectHeading
+                {\textbf{VirgilAbloh GPT} $|$ \emph{Transformers, PyTorch, GLM} $|$ \href{https://github.com/knowrohit/virgilablohGPT}{Github}}{} 
+            \resumeItemListStart
+                \resumeItem{Virgil engages in fashion-related conversations, provides tailored recommendations, and offers assistance on various tasks like coding, humour.}
+                \resumeItem{Utilized transformers and decoding methods to mimic the user's talking style, also using Text-to-Speech Conversion}
+                \resumeItem{Virgil’s heart lies a complex autoregressive language model GLM that utilizes deep learning to produce human-like text.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{FashionGPT} $|$ \emph{Tensorflow, Azure, Docker, HuggingFace, BS4} $|$ \href{https://github.com/knowrohit/FashionGPT}{GitHub}}{} 
+            \resumeItemListStart
+                \resumeItem{AI-powered product recommender system designed to help users find their perfect fashion match with user-friendly UI.}
+                \resumeItem{Implemented feature extraction using Cosine similarities, ResNet hidden layers, and Azure image tags.}
+                \resumeItem{New updates will have video-based recommendations using GCP video intelligence, to be deployed soon.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{NFT-GAN} $|$ \emph{torchvision, Numpy, PIL, scipy} $|$ \href{https://github.com/knowrohit/NFT-GAN}{GitHub}}{} 
+            \resumeItemListStart
+                \resumeItem{Developed an NFT-GAN for creating NFT avatar and collectible projects using Gmapping and Gsynthesis.}
+                \resumeItem{Configured image generation processes to control trait rarity and generate JSON metadata for NFTs in compliance with OpenSea metadata requirements.}
+            \resumeItemListEnd
         \resumeProjectHeading
             {\textbf{SCRIPTWRITING USING RNN} $|$ \emph{TensorFlow, Keras, Numpy}  $|$ \href{https://github.com/knowrohit/SCRIPTWRITING-USING-RNN}{Github}}{}
             \resumeItemListStart
                 \resumeItem{Developed a recurrent neural network for scriptwriting that detects user input texts and generates new movie scripts}
                 \resumeItem{Improved text generation quality by 25 percent with additional training epochs}
           \resumeItemListEnd
-        \resumeProjectHeading
-                {\textbf{Bernard-The first sentient AI Chatbot} $|$ \emph{Hugging Face, Transformers, GPT-2, PyTorch} $|$ \href{https://github.com/knowrohit/BERNARD--The-first-sentient-AI}{Github}}{} 
-            \resumeItemListStart
-                \resumeItem{Bernard combines a sophisticated neural network machine learning model and scripted dialogue content.}
-                \resumeItem{Utilized transformers and decoding methods to mimic the user's talking style, improving user engagement by 40 percent}
-                \resumeItem{Bernard’s heart lies a complex autoregressive language model GPT-2 that utilizes deep learning to produce human-like text.}
-          \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{FashionGPT} $|$ \emph{VGG16, AWS, Docker, HuggingFace, BS4} $|$ \href{https://github.com/knowrohit/FashionGPT}{GitHub}}{} 
-            \resumeItemListStart
-                \resumeItem{AI-powered product recommender system designed to help users find their perfect fashion match}
-                \resumeItem{Implemented feature extraction using Cosine similarities, VGG hidden layers, and Azure image tags.}
-                \resumeItem{Achieved accurate predictions using similarity scores and ensemble learning with VGG16 in computer vision and NCF for combined predictions, to be deployed on AWS EC2.}
-          \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{NFT-GAN} $|$ \emph{torchvision, numpy, PIL, tensorboard, scipy} $|$ \href{https://github.com/knowrohit/NFT-GAN}{GitHub}}{} 
-            \resumeItemListStart
-                \resumeItem{Developed an NFT-GAN for creating NFT avatar and collectible projects using Gmapping and Gsynthesis.}
-                \resumeItem{Configured image generation processes to control trait rarity and generate JSON metadata for NFTs in compliance with OpenSea metadata requirements.}
                
           \resumeItemListEnd
 
             
-    \resumeSubHeadingListEnd
+     \resumeSubHeadingListEnd
 
  
 %-----------PROGRAMMING SKILLS-----------
@@ -227,7 +223,7 @@
     \small{\item{
      \textbf{Languages}{:Python, C/C++, SQL} \\
      \vspace{1pt}
-     \textbf{Technologies}{: Anaconda, Apache, NVIDIA Cuda, Linux, Jupyter, PostgreSQL, MySQL Shopify, WordPress} \\
+     \textbf{Technologies}{: Anaconda, Apache, NVIDIA Cuda, Linux, Jupyter, PostgreSQL, Azure, Shopify, WordPress} \\
      \vspace{1pt}
      \textbf{Developer Tools}{: Git, Docker, Microsoft Azure ML, VS Code, AWS Sagemaker, AWS EC2} \\
      \vspace{1pt}
