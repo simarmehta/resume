@@ -1,5 +1,4 @@
-
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article} % Changed font size to 10pt
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -22,17 +21,7 @@
 \usepackage{xcolor}
 \hypersetup{colorlinks,urlcolor=blue}
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
 \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -40,12 +29,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\textwidth}{1.25in} % Adjusted text width slightly
+\addtolength{\topmargin}{-0.8in} % Reduced top margin slightly
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -53,16 +41,12 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\scshape\raggedright\small\bfseries % Reduced section title font size
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -75,43 +59,37 @@
   }
 }
 
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt} % Reduced vertical spacing
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\justify \begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\justify \begin{itemize} \vspace{-3pt}} % Reduced list spacing
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -120,144 +98,101 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    {\Huge \scshape rohit tiwari} \\ \vspace{1pt}
-    % 123 Street Name, Town, State 12345 \\ 
-    \vspace{5pt}
-    % \small \raisebox{-0.1\height}\faPhone\ 9871626616 ~ 
-    \raisebox{-0.2\height}\faEnvelope\ \href{mailto:knowrohit.07@gmail.com}{ knowrohit.work@gmail.com} ~ 
-    \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/rohit-tiwari-907387204/}{LinkedIn} ~
-    \raisebox{-0.2\height}\faGithub\ \href{https://github.com/knowrohit}{Github} ~ 
+    {\Huge \scshape Simardeep Singh Mehta} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1-934-222-8000 ~ 
+    \raisebox{-0.2\height}\faEnvelope\ \href{mailto:sm11377@nyu.edu}{ sm11377@nyu.edu} ~ 
+    \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/simarnyu/}{ linkedin.com/in/simarnyu}  ~
+    \raisebox{-0.2\height}\faGithub\ \href{https://github.com/simarmehta}{ github.com/simarmehta}
     \vspace{-8pt}
 \end{center}
 
-% %-----------EDUCATION-----------
-% \section{Education}
-%    \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {Amity University, Noida}{Jul '19 -- May '23}
-%       {B.Tech in Computer Science Engineering}{8.5 CGPA}
-%   \resumeSubHeadingListEnd
 
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+     \textbf{Languages}{: Python, Java, C++, C\#, HTML/CSS, NodeJS, MySQL, Dart, Shell, React, Django, JavaScript} \\
+     \vspace{1pt}
+     \textbf{Frameworks}{: Pytorch, Scikit, TensorFlow, Keras, OpenCV, Flask, MongoDB, DynamoDB, PostgreSQL, MapReduce} \\
+     \vspace{1pt}
+     \textbf{Libraries}{: NumPy, Pandas, Matplotlib, NLTK, HuggingFace, Spacy, Seaborn} \\
+     \vspace{1pt}
+     \textbf{Tools}{: AWS, GCP, Helm, Kafka, Snowflake, Git, Terraform, Spark, Docker, Kubernetes, Linux, DevOps} \\
+    }
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
     \resumeSubheading
-      {{TartanHQ}\href{https://www.tartanhq.com/}{}}{July '22 -- April '23}
-      {Data Scientist}{}
-      \vspace{-7pt}
+      {American Institute for Research}{May 2024 -- August 2024}
+      {MLOps Intern}{New York, USA}
       \resumeItemListStart
-        \resumeItem{Successfully deployed and fine-tuned Document extraction OCR models using LayoutLM v3 on AWS EC2, replacing third party APIs with inbuilt solution}
-        \resumeItem{Built and deployed models for Document Classification, Payslip Forgery, and Blur Detection using Tesseract, Torchvision, Detectron2, and Spacy NLP, achieving a 95 percent accuracy rate.}
-        
-        \resumeItem{Analyzed Data inflow, timestamps of Payslips, and their metadata using Apache Superset (MySQL); contributed to the development of a custom annotation tool for OCR.}
+        \resumeItem{Spearheaded an internal MLOps project using Flask, ChromaDB, Haystack, and AzureOpenAI to develop a Retrieval Augmented Generation-based folder system, optimizing document management and retrieval processes for internal company use, enhancing operational efficiency by over 25\%.}
+        \resumeItem{Collaborated with the development and IT teams to identify and resolve bottlenecks, documented processes for reproducibility, and implemented GitHub Actions to automate CI/CD pipelines, reducing deployment times by 20\%.}
+        \resumeItem{Managed Kubernetes deployments using Helm charts, contributed to the maintenance of a comprehensive application and stakeholder database, and authored automated test scripts with Selenium to ensure application integrity and accuracy.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {{Trill Marketplace} \href{https://trillmrkt.com/}{}}{February '21 -- March '22}
-      {Machine Learning Engineer}{}
-      
-      \vspace{-7pt}
+      {Ernst \& Young (EY)}{June 2022 -- August 2022}
+      {Data Science Intern}{Gurugram, India}
       \resumeItemListStart
-        \resumeItem{Developed an LLM for customer assistance using GPT-NEO(20B); incorporated CI/CD pipelines for model updates and deployment.}
-        \resumeItem{Worked on ML systems using Google Pegasus in production to scrape and learn from the clustered/textual data of streetwear customers.}
-        \resumeItem{Collaborated with data engineering teams to establish robust data pipelines,  used MLflow for tracking experiments, reproducibility, and model versioning.}
+        \resumeItem{Led AWS-powered cloud architecture projects, enhancing data storage and management, achieving a 30\% faster data processing by implementing a data pipeline.}
+        \resumeItem{Conducted analytics on large datasets with Python and SQL, significantly enhancing data quality and insights.}
+        \resumeItem{Refined and cleansed data in Excel, correcting outliers and missing values. Incorporated a tool for automated data analysis, data visualization, and data mining, ensuring compliance with data quality standards.}
+        \resumeItem{Evaluated and improved SAP software outputs against client requirements, increasing system reliability and performance.}
       \resumeItemListEnd
-      
+
     \resumeSubheading
-      {{GooseAI}\href{https://goose.ai/}{}}{April '21 -- July '21}
-      {Data Science: Intern}{}
-      \vspace{-7pt}
+      {OnePercent Software LLC}{April 2022 -- June 2022}
+      {Software Engineering Intern}{Bengaluru, India}
       \resumeItemListStart
-        \resumeItem{ Contributed on experimental ML with physics such as Phononics, and federated learning, achieving a 90 percent success rate in simulations.}
+        \resumeItem{Collaborated with a cross-functional Machine Learning team to implement single-player game logic, achieving a 30\% uplift in user engagement and retention leading to revenue generation of about \$150k.}
+        \resumeItem{Designed and programmed UI and backend for mobile app/games, enhancing workflow by incorporating advanced features for stateful interactions that boosted visibility and user engagement by 20\%.}
+        \resumeItem{Contributed to the Unit testing phase, fixed bugs and errors through version control and documentation, employing agile practices which resulted in a 15\% increase in efficiency and user satisfaction.}
       \resumeItemListEnd
-      
     
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{September 2023 -- May 2025}
+      {M.S. Computer Science; GPA: 4.0/4.0}{Brooklyn, New York}
+    
+    \resumeSubheading
+      {Amity University, Uttar Pradesh}{July 2019 -- June 2023}
+      {Bachelors in Computer Science; GPA: 3.77/4.0}{Noida, India}
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \vspace{-5pt}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\textbf{Saraswati LLM} $|$ \emph{Transformers, Node-js, JavaScript, Docker} $|$ \href{}{}}{} 
+            {\textbf{EaTexas - Food Delivery App} $|$ \emph{AWS Lex, SageMaker, Location Service}}{Project Code}
             \resumeItemListStart
-                \resumeItem{A full-stack application allowing students to upload academic documents and engage with my own state-of-the-art LLM, "Saraswati".}
-                \resumeItem{RAG System: Upload academic content (books, PDFs). Uses Sentence Transformers for embedding, FAISS indexing for similarity matching, and integrates with LLM for generating personalized answers based on chunks + query.}
-                \resumeItem{Code Scripting: Generate scripts in various programming languages, trained on 20k high-quality leetcode and stackoverflow infilling samples.}
-                \resumeItem{Logical / IQ Tasks: Perform arithmetic, and chain-of-thought reasoning.}
-                \resumeItem{Model performance: Competing with GPT-3.5 in benchmarks and overall utility.}
-          \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{know-medical-dialogues} $|$ \emph{HuggingFace,Datasets,LLM} $|$ \href{https://huggingface.co/datasets/knowrohit07/know_medical_dialogue_v2}{HuggingFace}}{}
-            \resumeItemListStart
-                \resumeItem{Dataset of conversational exchanges between patients and doctors on diverse medical topics, covers a wide range of medical queries and advice.}
-                \resumeItem{Beneficial for healthcare professionals, especially in resource-limited regions. Facilitates AI-assisted medical roleplays on affordable devices if trained on quantized LLMs.}
-                \resumeItem{Derived from anonymized patient-doctor seed interactions and then synthetically generated via GPT4.}
-            \resumeItemListEnd  
-        \resumeProjectHeading
-                {\textbf{VirgilAbloh GPT} $|$ \emph{Transformers, PyTorch, GLM} $|$ \href{https://github.com/knowrohit/virgilablohGPT}{Github}}{} 
-            \resumeItemListStart
-                \resumeItem{Virgil engages in fashion-related conversations, provides tailored recommendations, and offers assistance on various tasks like coding, humour.}
-                \resumeItem{Utilized transformers and decoding methods to mimic the user's talking style, also using Text-to-Speech Conversion}
-                \resumeItem{Virgil’s heart lies a complex autoregressive language model GLM that utilizes deep learning to produce human-like text.}
-          \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{Fashion RecSys} $|$ \emph{Tensorflow, Azure, Docker, HuggingFace, BS4} $|$ \href{https://github.com/knowrohit/Fashion-Rec-Sys}{GitHub}}{} 
-            \resumeItemListStart
-                \resumeItem{AI-powered product recommender system designed to help users find their perfect fashion match with user-friendly UI.}
-                \resumeItem{Implemented feature extraction using Cosine similarities, ResNet hidden layers, and Azure image tags.}
-                \resumeItem{New updates will have video-based recommendations using GCP video intelligence, to be deployed soon.}
-          \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{NFT-GAN} $|$ \emph{torchvision, Numpy, PIL, scipy} $|$ \href{https://github.com/knowrohit/NFT-GAN}{GitHub}}{} 
-            \resumeItemListStart
-                \resumeItem{Developed an NFT-GAN for creating NFT avatar and collectible projects using Gmapping and Gsynthesis.}
-                \resumeItem{Configured image generation processes to control trait rarity and generate JSON metadata for NFTs in compliance with OpenSea metadata requirements.}
+                \resumeItem{Pioneered a multimodal NLP and photo-based food delivery web app, enhancing user experience by providing custom dish recommendations through a machine learning model hosted through AWS Lex, AWS Location Service, and Amazon SageMaker.}
+                \resumeItem{Orchestrated a secure AWS infrastructure featuring Cognito, DynamoDB, and RDS, bolstering user trust through seamless authentication and data management.}
+                \resumeItem{Optimized order fulfillment with a conversational AI chatbot, supported by 35 AWS Lambda and SQS, accelerating the ordering process by 20\%.}
             \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{Open Source Projects} $|$ \emph{HuggingFace, Datasets, LLMs}  $|$ \href{https://huggingface.co/knowrohit07}{HuggingFace}}{}
-            \resumeItemListStart
-                \resumeItem{Clean uncensored datasets using Self-instruct fine tuning.}
-                \resumeItem{regular updates with large majority of HF models, in any modality (text, vision, multi-modal, etc.)}
-          \resumeItemListEnd
-               
-          
-
             
+        \resumeProjectHeading
+            {\textbf{FashionGPT - Product Recommendation System} $|$ \emph{CNN, ResNet50, VGG16}}{Project Code}
+            \resumeItemListStart
+                \resumeItem{Developed an end-to-end AI-driven fashion recommendation engine utilizing CNNs with ResNet50 and VGG16 models, improving product match accuracy by 30\%.}
+                \resumeItem{Automated data collection for over 100,000 items using BeautifulSoup, reducing manual data entry workload by 70\%.}
+                \resumeItem{Deployed the system on Azure integrating CI/CD pipelines for automated deployment and testing, ensuring robust scalability, and achieving a 99.9\% uptime, catering to 5k+ daily user queries.}
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
 
- 
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+%-----------HONORS AND AWARDS-----------
+\section{Honors \& Awards}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{:Python, C/C++, SQL} \\
-     \vspace{1pt}
-     \textbf{Technologies}{: Anaconda, Apache, NVIDIA Cuda, Linux, Jupyter, PostgreSQL, Azure, Shopify, WordPress} \\
-     \vspace{1pt}
-     \textbf{Developer Tools}{: Git, Docker, Microsoft Azure ML, VS Code, AWS Sagemaker, AWS EC2} \\
-     \vspace{1pt}
-     \textbf{Libraries}{: PyTorch, TensorFlow, CUDA, gRPC, Langchain, chromaDB, Numpy, Pandas, Scikit-Learn, OpenCV, FastAPI, Flask} \\
-     \vspace{1pt}
-     \textbf{MLOPS}{: Kubeflow, MLflow, WeightsBiases} \\
-    }}
+    \item{AWS Academy Graduate and Practitioner - AWS Academy Cloud Foundations. Issued on 09/28/2021.}
+    \item{\textit{“Unraveling Information about Deep Learning.”} (IRJET), Vol. 09, Issue 11, November 2022.}
  \end{itemize}
-
-
-
-%-----------INVOLVEMENT---------------
-\section{EXTRA-CURRICULAR}
-
-\begin{itemize}[leftmargin=0.2in]
-
-  \achievementItem{Member of Amity Linux Assistance Sapience Club(ALiAS)}
-  \achievementItem{Zonal-Level Football Champion, BBFS FC}
-
-\end{itemize}
 
 \end{document}
