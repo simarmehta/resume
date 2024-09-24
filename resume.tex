@@ -1,4 +1,205 @@
 
+% \documentclass[letterpaper,10pt]{article} % Changed font size to 10pt
+
+% \usepackage{latexsym}
+% \usepackage[empty]{fullpage}
+% \usepackage{titlesec}
+% \usepackage{marvosym}
+% \usepackage[usenames,dvipsnames]{color}
+% \usepackage{verbatim}
+% \usepackage{enumitem}
+% \usepackage[hidelinks]{hyperref}
+% \usepackage{fancyhdr}
+% \usepackage[english]{babel}
+% \usepackage{tabularx}
+% \usepackage{fontawesome5}
+% \usepackage{multicol}
+% \setlength{\multicolsep}{-3.0pt}
+% \setlength{\columnsep}{-1pt}
+% \input{glyphtounicode}
+% \usepackage{ragged2e}
+
+% \usepackage{xcolor}
+% \hypersetup{colorlinks,urlcolor=blue}
+
+% \usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{} % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% \addtolength{\oddsidemargin}{-0.6in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1.25in} % Adjusted text width slightly
+% \addtolength{\topmargin}{-0.8in} % Reduced top margin slightly
+% \addtolength{\textheight}{1.5in}
+
+% \urlstyle{same}
+
+% \raggedbottom
+% \raggedright
+% \setlength{\tabcolsep}{0in}
+
+% \titleformat{\section}{
+%   \vspace{-4pt}\scshape\raggedright\small\bfseries % Reduced section title font size
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% \pdfgentounicode=1
+
+% \newcommand{\resumeItem}[1]{
+%   \item\small{
+%     {#1 \vspace{-2pt}}
+%   }
+% }
+
+% \newcommand{\achievementItem}[1]{
+%   \item\small{
+%     {#1 \vspace{-6pt}}
+%   }
+% }
+
+% \newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & \textbf{\small #2} \\
+%       \textit{\small#3} & \textit{\small #4} \\
+%     \end{tabular*}\vspace{-5pt} % Reduced vertical spacing
+% }
+
+% \newcommand{\resumeSubSubheading}[2]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%       \textit{\small#1} & \textit{\small #2} \\
+%     \end{tabular*}\vspace{-5pt}
+% }
+
+% \newcommand{\resumeProjectHeading}[2]{
+%     \item
+%     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+%       \small#1 & \textbf{\small #2} \\
+%     \end{tabular*}\vspace{-5pt}
+% }
+
+% \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+% \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+% \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+% \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+% \newcommand{\resumeItemListStart}{\justify \begin{itemize} \vspace{-3pt}} % Reduced list spacing
+% \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+% %-------------------------------------------
+% %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \begin{document}
+
+% %----------HEADING----------
+% \begin{center}
+%     {\Huge \scshape Simardeep Singh Mehta} \\ \vspace{1pt}
+%     \small \raisebox{-0.1\height}\faPhone\ +1-934-222-8000 ~ 
+%     \raisebox{-0.2\height}\faEnvelope\ \href{mailto:sm11377@nyu.edu}{ sm11377@nyu.edu} ~ 
+%     \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/simarnyu/}{ linkedin.com/in/simarnyu}  ~
+%     \raisebox{-0.2\height}\faGithub\ \href{https://github.com/simarmehta}{ github.com/simarmehta}
+%     \vspace{-8pt}
+% \end{center}
+
+
+% %-----------TECHNICAL SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \item{
+%      \textbf{Languages}{: Python, C++, C\#, HTML/CSS, MySQL, Dart, Django, JavaScript} \\
+%      \vspace{1pt}
+%      \textbf{Frameworks}{: Pytorch, Scikit, TensorFlow, Keras, OpenCV, Flask, MongoDB, PostgreSQL, MapReduce} \\
+%      \vspace{1pt}
+%      \textbf{Libraries}{: NumPy, Pandas, Matplotlib, NLTK, HuggingFace, Spacy, Seaborn} \\
+%      \vspace{1pt}
+%      \textbf{Tools}{: AWS, GCP, Helm, Kafka, Git, Terraform, Spark, Docker, Kubernetes, Linux} \\
+%     }
+%  \end{itemize}
+
+% %-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {American Institute for Research}{May 2024 -- August 2024}
+%       {MLOps Intern}{New York, USA}
+%       \resumeItemListStart
+%         \resumeItem{Architected and implemented an MLOps pipeline using Flask and ChromaDB, integrating with AzureOpenAI for a Retrieval Augmented Generation (RAG) system, enhanced with re-ranking methods to ensure semantically meaningful document chunks are fetched, resulting in a 25\% improvement in document retrieval efficiency.}
+%         \resumeItem{Orchestrated end-to-end CI/CD workflows with automated testing, dockerization, and Kubernetes deployments, reducing deployment times by 20\%.}
+%         \resumeItem{Designed and implemented Helm charts for Kubernetes, facilitating version-controlled, templated deployments of a microservices architecture.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Ernst \& Young (EY)}{June 2022 -- August 2022}
+%       {Data Science Intern}{Gurugram, India}
+%       \resumeItemListStart
+%         \resumeItem{Built an end-to-end ETL pipeline using AWS Glue and Lambda to process 3TB+ of financial data daily with 99.9\% accuracy, refining data by correcting outliers and handling missing values, while integrating automated analysis and visualization with AWS QuickSight and SageMaker to ensure data quality compliance.}
+%         % \resumeItem{Conducted analytics on large datasets with Python and SQL, significantly enhancing data quality and insights.}
+%         \resumeItem{Implemented a distributed data processing system using Apache Spark on EMR, reducing data processing time by 40\%}
+%         \resumeItem{Developed a pipeline using Python and Pandas to analyze SAP transactional data, implementing rule-based and statistical methods to detect anomalies, improving fraud detection efficiency by 15\%.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {OnePercent Software LLC}{April 2022 -- June 2022}
+%       {Software Engineering Intern}{Bengaluru, India}
+%       \resumeItemListStart
+%         \resumeItem{Collaborated with the Machine Learning team to implement a reinforcement learning model using TensorFlow to dynamically adjust game difficulty in a mobile game, leading to a 25\% increase in user retention.}
+%         \resumeItem{Designed and deployed a microservices architecture for backend using Docker and Kubernetes for the game backend, improving scalability, and reducing server costs by 20\%.}
+%         \resumeItem{Enhanced efficiency and user satisfaction by 15\% through bug fixes, unit testing, and developing a real-time analytics pipeline using the ELK stack (Elasticsearch, Logstash, Kibana) to monitor user behavior and game performance.}
+%       \resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+
+% %-----------EDUCATION-----------
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {New York University}{September 2023 -- May 2025}
+%       {M.S. Computer Science; GPA: 4.0/4.0}{Brooklyn, New York}
+    
+%     \resumeSubheading
+%       {Amity University, Uttar Pradesh}{July 2019 -- June 2023}
+%       {Bachelors in Computer Science; GPA: 3.77/4.0}{Noida, India}
+%   \resumeSubHeadingListEnd
+
+% %-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%         \resumeProjectHeading
+%             {\textbf{EaTexas - Food Delivery App} $|$ \emph{AWS Lex, SageMaker, Location Service}}{Project Code}
+%             \resumeItemListStart
+%                 \resumeItem{Implemented a multi-modal machine learning pipeline using AWS Step Functions, integrating Lex with BERT for text analysis while leveraging AWS Rekognition alongside ResNet for advanced image processing of food items, for more accurate recommendations and analysis.}
+%                 \resumeItem{Designed a real-time monitoring system using AWS CloudWatch and Grafana, setting up alerts and dashboards for admin panel of the application.}
+%                 \resumeItem{Engineered a scalable, secure and serverless architecture using AWS Lambda, API Gateway, and SQS for a chatbot-based food delivery system, efficiently handling 1000+ concurrent users.}
+%             \resumeItemListEnd
+            
+%         \resumeProjectHeading
+%             {\textbf{FashionGPT - Product Recommendation System} $|$ \emph{CNN, ResNet50, VGG16}}{Project Code}
+%             \resumeItemListStart
+%                 \resumeItem{Engineered an AI-driven fashion recommendation system combining ResNet50, VGG16, collaborative filtering, and content-based methods, leveraging FastAI for transfer learning, improving product match accuracy by 30\%.}
+%                 \resumeItem{Implemented A/B testing framework using Python and Bayesian methods to optimize recommendation algorithms, resulting in a 15\% increase in click-through rates.}
+%                 \resumeItem{Automated data collection for 100,000+ items using BeautifulSoup, cutting manual entry by 70\%, and designed a feature store with Feast to enable efficient feature sharing across ML models, reducing training time by 30\%.}
+%                 \resumeItem{Deployed the system on Azure Kubernetes Service (AKS) with Istio service mesh, implementing canary deployments and achieving 99.99\% uptime}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+    
+% %-----------HONORS AND AWARDS-----------
+% \section{Honors \& Awards}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \item{AWS Academy Graduate and Practitioner - AWS Academy Cloud Foundations. Issued on 09/28/2021.}
+%     \item{\textit{“Unraveling Information about Deep Learning.”} (IRJET), Vol. 09, Issue 11, November 2022.}
+%  \end{itemize}
+
+% \end{document}
+
+
 
 \documentclass[letterpaper,10pt]{article} % Changed font size to 10pt
 
@@ -167,6 +368,7 @@
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
+\small
  \begin{itemize}[leftmargin=0.15in, label={}]
     \item{
      \textbf{Languages}{: Python, C++, C\#, HTML/CSS, MySQL, Dart, Django, JavaScript} \\
@@ -178,6 +380,7 @@
      \textbf{Tools}{: AWS, GCP, Helm, Kafka, Git, Terraform, Spark, Docker, Kubernetes, Linux} \\
     }
  \end{itemize}
+ \normalsize
 
 %-----------PROJECTS-----------
 \section{Projects}
